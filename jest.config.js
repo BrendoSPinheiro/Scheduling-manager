@@ -1,9 +1,9 @@
 /*
- * For a detailed explanation regarding each configuration property and type check, visit:
+ * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/en/configuration.html
  */
 
-export default {
+module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -65,7 +65,7 @@ export default {
   // globals: {},
 
   // The maximum amount of workers used to run your tests. Can be specified as %
-  // or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as
+  //  or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as
   // the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
   // maxWorkers: "50%",
 
@@ -85,11 +85,11 @@ export default {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names
-  // that allow to stub out resources with a single module
+  //  that allow to stub out resources with a single module
   // moduleNameMapper: {},
 
   // An array of regexp pattern strings, matched against all module paths before
-  // considered 'visible' to the module loader
+  //  considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
 
   // Activates notifications for test results
@@ -139,11 +139,10 @@ export default {
   // setupFilesAfterEnv: [],
 
   // The number of seconds after which a test is considered as slow and reported
-  // as such in the results.
+  //  as such in the results.
   // slowTestThreshold: 5,
 
-  // A list of paths to snapshot serializer modules Jest should use for snapshot
-  // testing
+  // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
@@ -162,7 +161,7 @@ export default {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths,
-  // matched tests are skipped
+  //  matched tests are skipped
   // testPathIgnorePatterns: [
   //   "/node_modules/"
   // ],
@@ -187,7 +186,7 @@ export default {
   // transform: undefined,
 
   // An array of regexp pattern strings that are matched against all source file
-  // paths, matched files will skip transformation
+  //  paths, matched files will skip transformation
   // transformIgnorePatterns: [
   //   "/node_modules/",
   //   "\\.pnp\\.[^\\/]+$"
