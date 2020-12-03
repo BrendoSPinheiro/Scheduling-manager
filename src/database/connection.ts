@@ -13,8 +13,6 @@ class Connection {
   writeFile(content: object) {
     const stringfyContent = JSON.stringify(content);
     fs.writeFileSync(database, stringfyContent, 'utf-8');
-
-    return JSON.parse(stringfyContent);
   }
 }
 
