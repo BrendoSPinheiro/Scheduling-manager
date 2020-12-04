@@ -1,6 +1,6 @@
 import Database from '../../database/connection';
 
-class RuleScheduleRepository {
+class ScheduleRuleRepository {
   findAll() {
     const rules = Database.readFile();
 
@@ -8,4 +8,4 @@ class RuleScheduleRepository {
   }
 }
 
-export default new RuleScheduleRepository();
+export default new ScheduleRuleRepository();

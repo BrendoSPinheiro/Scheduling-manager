@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
-import RuleScheduleController from './app/controllers/RuleScheduleController';
+import ScheduleRuleController from './app/controllers/ScheduleRuleController';
 
 const router = Router();
 
-router.get('/rules', RuleScheduleController.index);
+router.get('/rules', ScheduleRuleController.index);
 
 export default router;

@@ -1,8 +1,8 @@
-import RuleScheduleRepository from '../repositories/RuleScheduleRepository';
+import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 
 class ListRuleService {
   execute() {
-    const rules = RuleScheduleRepository.findAll();
+    const rules = ScheduleRuleRepository.findAll();
 
     return rules;
   }
