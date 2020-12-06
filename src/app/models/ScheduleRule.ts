@@ -1,4 +1,4 @@
-import { uuid } from 'uuidv4';
+import { v4 } from 'uuid';
 
 import Interval from './Interval';
 
@@ -13,8 +13,8 @@ class ScheduleRule {
 
   timeInterval: Interval[];
 
-  constructor(type: string, date: Date, weekDays: string[], timeInterval: Interval[]) {
-    this.id = uuid();
+  constructor(type: string, timeInterval: Interval[], date?: Date, weekDays?: string[]) {
+    this.id = v4();
     this.type = type;
     this.date = date;
     this.weekDays = weekDays;

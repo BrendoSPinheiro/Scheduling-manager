@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import ScheduleRule from '../app/models/ScheduleRule';
 
 class Connection {
   database = path.resolve(__dirname, 'database.json');
@@ -9,8 +10,8 @@ class Connection {
     return JSON.parse(content);
   }
 
-  writeFile(content: object) {
-    const stringfyContent = JSON.stringify(content);
+  writeFile(content: ScheduleRule) {
+    const stringfyContent = JSON.stringify(content, null, 2);
     fs.writeFileSync(this.database, stringfyContent, 'utf-8');
   }
 }
