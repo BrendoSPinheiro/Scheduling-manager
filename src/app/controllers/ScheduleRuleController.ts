@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import ScheduleRule from '../models/ScheduleRule';
+import { parseISO } from 'date-fns';
+import CreateScheduleRuleService from '../services/CreateScheduleRuleService';
 import ListScheduleRuleService from '../services/ListScheduleRuleService';
-import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 
 class ScheduleRuleController {
   index(request: Request, response: Response) {
@@ -13,13 +13,21 @@ class ScheduleRuleController {
   }
 
   store(request: Request, response: Response) {
-    const { type, date, weekDays, timeInterval } = request.body;
+    try {
+      const { type, date, weekDays, timeInterval } = request.body;
 
-    const scheduleRule = new ScheduleRule(type, timeInterval);
+      const parsedDate = parseISO(date);
 
-    const newScheduleRule = ScheduleRuleRepository.create(scheduleRule);
+      const createScheduleRule = new CreateScheduleRuleService();
 
-    response.json(newScheduleRule);
+      const newScheduleRule = createScheduleRule.execute(
+        type.toLowerCase(), parsedDate, weekDays, timeInterval,
+      );
+
+      return response.status(200).json(newScheduleRule);
+    } catch (error) {
+      return response.status(400).json({ error: error.message });
+    }
   }
 }
 

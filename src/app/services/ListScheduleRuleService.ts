@@ -1,11 +1,11 @@
 import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 
-class ListRuleService {
+class ListScheduleRuleService {
   execute() {
-    const rules = ScheduleRuleRepository.findAll();
+    const scheduleRules = ScheduleRuleRepository.findAll();
 
-    return rules;
+    return scheduleRules;
   }
 }
 
-export default ListRuleService;
+export default ListScheduleRuleService;
