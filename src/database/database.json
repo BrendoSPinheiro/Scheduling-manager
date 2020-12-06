@@ -1,19 +1,5 @@
 [
   {
-    "id": "48dcbcde-5007-43a4-ba62-f29c33d16ff4",
-    "type": "daily",
-    "timeInterval": [
-      {
-        "start": "12:40",
-        "end": "14:00"
-      },
-      {
-        "start": "15:00",
-        "end": "18:00"
-      }
-    ]
-  },
-  {
     "id": "75661720-eb4f-4262-803e-026a5eebf819",
     "type": "specific",
     "date": "2021-05-15T03:00:00.000Z",
