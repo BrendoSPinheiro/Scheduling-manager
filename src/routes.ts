@@ -8,4 +8,6 @@ router.get('/rules', ScheduleRuleController.index);
 
 router.post('/rules', ScheduleRuleController.store);
 
+router.delete('/rules/:id', ScheduleRuleController.delete);
+
 export default router;

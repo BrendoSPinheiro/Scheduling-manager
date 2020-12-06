@@ -1,40 +1,8 @@
 [
   {
-    "id": "8e57023f-1f95-4cb1-9a58-b1b03ead82b5",
-    "type": "daily",
-    "timeInterval": [
-      {
-        "start": "12:00",
-        "end": "14:00"
-      },
-      {
-        "start": "15:00",
-        "end": "18:00"
-      }
-    ]
-  },
-  {
-    "id": "28730c51-bcfd-4500-b8f7-6208213471da",
-    "type": "weekly",
-    "weekDays": [
-      "segunda",
-      "quarta"
-    ],
-    "timeInterval": [
-      {
-        "start": "12:00",
-        "end": "14:00"
-      },
-      {
-        "start": "15:00",
-        "end": "18:00"
-      }
-    ]
-  },
-  {
-    "id": "9ddba72b-6403-4a5d-b396-1ae20e5bab49",
+    "id": "150a456c-9f93-45da-886a-d47dd439f1c6",
     "type": "specific",
-    "date": "2020-05-15T03:00:00.000Z",
+    "date": "2021-05-15T03:00:00.000Z",
     "timeInterval": [
       {
         "start": "12:00",
@@ -47,8 +15,24 @@
     ]
   },
   {
-    "id": "df2b2d14-7eaa-4b80-b7b0-cc47e9d864c3",
-    "type": "daily",
+    "id": "e178ea09-43e7-4c27-9d34-0bae265d6448",
+    "type": "specific",
+    "date": "2021-05-15T03:00:00.000Z",
+    "timeInterval": [
+      {
+        "start": "12:00",
+        "end": "14:00"
+      },
+      {
+        "start": "15:00",
+        "end": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "604d38d5-c36a-40c7-828b-66ecd3c72436",
+    "type": "specific",
+    "date": "2021-05-15T03:00:00.000Z",
     "timeInterval": [
       {
         "start": "12:00",
