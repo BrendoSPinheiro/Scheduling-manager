@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
 import ScheduleRule from '../models/ScheduleRule';
-import ListRulesService from '../services/ListRulesService';
+import ListScheduleRuleService from '../services/ListScheduleRuleService';
 import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 
 class ScheduleRuleController {
   index(request: Request, response: Response) {
-    const listScheduleRules = new ListRulesService();
+    const listScheduleRules = new ListScheduleRuleService();
 
     const scheduleRules = listScheduleRules.execute();
 
