@@ -39,7 +39,7 @@ class ScheduleRuleController {
 
       deleteScheduleRule.execute(id);
 
-      return response.status(200).json({ message: 'Schedule rule deleted' });
+      return response.status(200).json({ message: 'Schedule rule has been deleted' });
     } catch (error) {
       return response.status(400).json({ error: error.message });
     }

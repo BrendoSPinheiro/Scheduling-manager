@@ -1,11 +1,10 @@
 [
   {
-    "id": "150a456c-9f93-45da-886a-d47dd439f1c6",
-    "type": "specific",
-    "date": "2021-05-15T03:00:00.000Z",
+    "id": "48dcbcde-5007-43a4-ba62-f29c33d16ff4",
+    "type": "daily",
     "timeInterval": [
       {
-        "start": "12:00",
+        "start": "12:40",
         "end": "14:00"
       },
       {
@@ -15,32 +14,13 @@
     ]
   },
   {
-    "id": "e178ea09-43e7-4c27-9d34-0bae265d6448",
+    "id": "75661720-eb4f-4262-803e-026a5eebf819",
     "type": "specific",
     "date": "2021-05-15T03:00:00.000Z",
     "timeInterval": [
       {
-        "start": "12:00",
-        "end": "14:00"
-      },
-      {
-        "start": "15:00",
-        "end": "18:00"
-      }
-    ]
-  },
-  {
-    "id": "604d38d5-c36a-40c7-828b-66ecd3c72436",
-    "type": "specific",
-    "date": "2021-05-15T03:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "12:00",
-        "end": "14:00"
-      },
-      {
-        "start": "15:00",
-        "end": "18:00"
+        "start": "14:20",
+        "end": "14:50"
       }
     ]
   }

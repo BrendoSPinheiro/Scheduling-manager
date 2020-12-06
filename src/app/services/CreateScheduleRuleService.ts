@@ -4,7 +4,7 @@ import Interval from '../models/Interval';
 import ScheduleRule from '../models/ScheduleRule';
 
 class CreateScheduleRuleService {
-  execute(type: string, date: Date, weekDays: string[], timeInterval: Interval[]) {
+  execute(type: string, date: Date, weekDays: number[], timeInterval: Interval[]) {
     if (!type.includes('specific') && !type.includes('daily') && !type.includes('weekly')) {
       throw Error('type is not valid');
     }

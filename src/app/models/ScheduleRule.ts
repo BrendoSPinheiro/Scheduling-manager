@@ -7,7 +7,7 @@ class ScheduleRule {
 
   date?: Date;
 
-  weekDays?: string[];
+  weekDays?: number[];
 
   timeInterval: Interval[];
 }

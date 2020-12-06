@@ -2,7 +2,7 @@ import Database from '../../database/connection';
 import ScheduleRule from '../models/ScheduleRule';
 
 class ScheduleRuleRepository {
-  public findAll() {
+  public findAll() : ScheduleRule[] {
     const rules = Database.readFile();
 
     return rules;
