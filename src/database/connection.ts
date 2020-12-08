@@ -5,7 +5,7 @@ import ScheduleRule from '../app/models/ScheduleRule';
 class Connection {
   private database = path.resolve(__dirname, 'database.json');
 
-  public readFile() {
+  public readFile(): ScheduleRule[] {
     const content = fs.readFileSync(this.database, 'utf-8');
     return JSON.parse(content);
   }

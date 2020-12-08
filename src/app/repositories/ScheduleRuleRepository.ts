@@ -9,7 +9,7 @@ class ScheduleRuleRepository {
   }
 
   public findById(id: string) : ScheduleRule {
-    const scheduleRules = Database.readFile() as ScheduleRule[];
+    const scheduleRules = Database.readFile();
 
     const findScheduleRule = scheduleRules.find((rule) => rule.id === id);
 
@@ -27,7 +27,7 @@ class ScheduleRuleRepository {
   }
 
   public delete(id: string) {
-    const currentScheduleRules = Database.readFile() as ScheduleRule[];
+    const currentScheduleRules = Database.readFile();
 
     const ScheduleRules = currentScheduleRules.filter((rule) => rule.id !== id);
 

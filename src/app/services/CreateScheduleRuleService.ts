@@ -3,8 +3,15 @@ import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 import Interval from '../models/Interval';
 import ScheduleRule from '../models/ScheduleRule';
 
+interface CreateScheduleRuleDTO {
+  type: string;
+  date: Date;
+  weekDays: number[];
+  timeInterval: Interval[];
+}
+
 class CreateScheduleRuleService {
-  execute(type: string, date: Date, weekDays: number[], timeInterval: Interval[]) {
+  execute({ type, date, weekDays, timeInterval }: CreateScheduleRuleDTO) {
     if (!type.includes('specific') && !type.includes('daily') && !type.includes('weekly')) {
       throw Error('type is not valid');
     }
