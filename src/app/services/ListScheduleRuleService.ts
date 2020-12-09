@@ -1,7 +1,7 @@
 import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 
 class ListScheduleRuleService {
-  execute() {
+  public execute() {
     const scheduleRules = ScheduleRuleRepository.findAll();
 
     return scheduleRules;

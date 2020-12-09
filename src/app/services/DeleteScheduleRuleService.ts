@@ -1,7 +1,7 @@
 import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 
 class DeleteScheduleRuleService {
-  execute(id: string) {
+  public execute(id: string) {
     const scheduleRuleExists = ScheduleRuleRepository.findById(id);
 
     if (!scheduleRuleExists) {

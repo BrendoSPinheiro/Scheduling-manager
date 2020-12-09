@@ -13,6 +13,14 @@ class ScheduleRuleController {
     return response.status(200).json(scheduleRules);
   }
 
+  public show(request: Request, response: Response) {
+    try {
+      const { startDateInterval, endDateInterval } = request.query;
+    } catch (error) {
+      response.status(400).json({ error: error.message });
+    }
+  }
+
   public store(request: Request, response: Response) {
     try {
       const { type, date, weekDays, timeInterval } = request.body;
