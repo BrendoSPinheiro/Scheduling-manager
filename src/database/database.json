@@ -1,12 +1,44 @@
 [
   {
-    "id": "75661720-eb4f-4262-803e-026a5eebf819",
+    "id": "7b2ea89b-d9a7-4e5c-b571-f4f76a11534f",
+    "type": "daily",
+    "timeInterval": [
+      {
+        "start": "12:50",
+        "end": "14:00"
+      },
+      {
+        "start": "15:30",
+        "end": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "863248db-9eb6-4845-a5e1-1c474256be5c",
     "type": "specific",
     "date": "2021-05-15T03:00:00.000Z",
     "timeInterval": [
       {
         "start": "14:20",
         "end": "14:50"
+      }
+    ]
+  },
+  {
+    "id": "1aa4942e-b930-4153-b068-d13b1c65e9b5",
+    "type": "weekly",
+    "weekDays": [
+      0,
+      4
+    ],
+    "timeInterval": [
+      {
+        "start": "12:40",
+        "end": "14:00"
+      },
+      {
+        "start": "15:00",
+        "end": "18:00"
       }
     ]
   }

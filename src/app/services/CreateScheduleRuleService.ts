@@ -1,49 +1,40 @@
-import { v4 } from 'uuid';
 import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 import Interval from '../models/Interval';
 import ScheduleRule from '../models/ScheduleRule';
 
 interface CreateScheduleRuleDTO {
   type: string;
-  date: Date;
+  parsedDate: Date;
   weekDays: number[];
   timeInterval: Interval[];
 }
 
 class CreateScheduleRuleService {
-  execute({ type, date, weekDays, timeInterval }: CreateScheduleRuleDTO) {
+  execute({ type, parsedDate, weekDays, timeInterval }: CreateScheduleRuleDTO) {
     if (!type.includes('specific') && !type.includes('daily') && !type.includes('weekly')) {
       throw Error('type is not valid');
     }
 
-    const scheduleRule = new ScheduleRule();
+    let scheduleRule;
 
     if (type.includes('specific')) {
-      if (!date || timeInterval.length < 1) {
+      if (!parsedDate || !timeInterval || timeInterval.length < 1) {
         throw Error('date or time interval is required');
       }
 
-      scheduleRule.id = v4();
-      scheduleRule.type = type;
-      scheduleRule.date = date;
-      scheduleRule.timeInterval = timeInterval;
+      scheduleRule = new ScheduleRule(type, timeInterval, parsedDate);
     } else if (type.includes('daily')) {
-      if (timeInterval.length < 1) {
+      if (!timeInterval || timeInterval.length < 1) {
         throw Error('time interval is required');
       }
 
-      scheduleRule.id = v4();
-      scheduleRule.type = type;
-      scheduleRule.timeInterval = timeInterval;
-    } else if (type.includes('weekly')) {
-      if (timeInterval.length < 1 || weekDays.length < 1) {
+      scheduleRule = new ScheduleRule(type, timeInterval);
+    } else {
+      if (!timeInterval || !weekDays || timeInterval.length < 1 || weekDays.length < 1) {
         throw Error('time interval or week days is required');
       }
 
-      scheduleRule.id = v4();
-      scheduleRule.type = type;
-      scheduleRule.weekDays = weekDays;
-      scheduleRule.timeInterval = timeInterval;
+      scheduleRule = new ScheduleRule(type, timeInterval, undefined, weekDays);
     }
 
     const newScheduleRule = ScheduleRuleRepository.create(scheduleRule);

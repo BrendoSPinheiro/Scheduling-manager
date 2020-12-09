@@ -22,7 +22,7 @@ class ScheduleRuleController {
       const createScheduleRule = new CreateScheduleRuleService();
 
       const newScheduleRule = createScheduleRule.execute(
-        type.toLowerCase(), parsedDate, weekDays, timeInterval,
+        { type, parsedDate, weekDays, timeInterval },
       );
 
       return response.status(200).json(newScheduleRule);
