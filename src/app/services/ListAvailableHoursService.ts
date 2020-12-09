@@ -7,8 +7,8 @@ interface IntervalDate {
 
 class ListAvailableHoursService {
   public execute({ startDate, endDate }: IntervalDate) {
-
+    const scheduleRules = ScheduleRuleRepository.findAll();
   }
 }
 
-export default ListAvailableTimeService;
+export default ListAvailableHoursService;

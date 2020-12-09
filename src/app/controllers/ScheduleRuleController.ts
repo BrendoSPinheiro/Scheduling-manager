@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { parseISO } from 'date-fns';
 import CreateScheduleRuleService from '../services/CreateScheduleRuleService';
 import ListScheduleRuleService from '../services/ListScheduleRuleService';
 import DeleteScheduleRuleService from '../services/DeleteScheduleRuleService';
+import ListAvailableHoursService from '../services/ListAvailableHoursService';
 
 class ScheduleRuleController {
   public index(request: Request, response: Response) {
@@ -17,7 +17,14 @@ class ScheduleRuleController {
     try {
       const { startDateInterval, endDateInterval } = request.query;
 
-      startDateInterval = String(startDateInterval);
+      const stringifyStartDate = String(startDateInterval);
+      const stringifyEndDate = String(endDateInterval);
+
+      const parsedStartDate = new Date(stringifyStartDate);
+      const parsedEndDate = new Date(stringifyEndDate);
+
+      const listAvailableHours = new ListAvailableHoursService();
+      listAvailableHours.execute({ startDate: parsedStartDate, endDate: parsedEndDate });
     } catch (error) {
       response.status(400).json({ error: error.message });
     }
@@ -27,7 +34,7 @@ class ScheduleRuleController {
     try {
       const { type, date, weekDays, timeInterval } = request.body;
 
-      const parsedDate = parseISO(date);
+      const parsedDate = new Date(date);
 
       const createScheduleRule = new CreateScheduleRuleService();
 
