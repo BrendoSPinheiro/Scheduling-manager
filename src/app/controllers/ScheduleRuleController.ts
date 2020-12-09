@@ -16,6 +16,8 @@ class ScheduleRuleController {
   public show(request: Request, response: Response) {
     try {
       const { startDateInterval, endDateInterval } = request.query;
+
+      startDateInterval = String(startDateInterval);
     } catch (error) {
       response.status(400).json({ error: error.message });
     }
@@ -30,7 +32,7 @@ class ScheduleRuleController {
       const createScheduleRule = new CreateScheduleRuleService();
 
       const newScheduleRule = createScheduleRule.execute(
-        { type, parsedDate, weekDays, timeInterval },
+        { type, date: parsedDate, weekDays, timeInterval },
       );
 
       return response.status(200).json(newScheduleRule);

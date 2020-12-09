@@ -12,7 +12,7 @@ class ScheduleRule {
 
   timeInterval: Interval[];
 
-  constructor(type:string, timeInterval: Interval[], date?: Date, weekDays?: number[]) {
+  constructor({ type, timeInterval, date, weekDays }: Omit<ScheduleRule, 'id'>) {
     this.id = v4();
     this.type = type;
     this.date = date;
