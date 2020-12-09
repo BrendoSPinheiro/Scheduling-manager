@@ -2,18 +2,18 @@ import Database from '../../database/connection';
 import ScheduleRule from '../models/ScheduleRule';
 
 class ScheduleRuleRepository {
-  public findAll() : ScheduleRule[] {
+  public findAll(): ScheduleRule[] {
     const rules = Database.readFile();
 
     return rules;
   }
 
-  public findById(id: string) : ScheduleRule {
+  public findById(id: string): ScheduleRule | undefined {
     const scheduleRules = Database.readFile();
 
     const findScheduleRule = scheduleRules.find((rule) => rule.id === id);
 
-    return findScheduleRule as ScheduleRule;
+    return findScheduleRule;
   }
 
   public create(newScheduleRule: ScheduleRule): ScheduleRule {

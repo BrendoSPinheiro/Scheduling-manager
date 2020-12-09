@@ -5,7 +5,7 @@ interface IntervalDate {
   endDate: Date;
 }
 
-class ListAvailableTimeService {
+class ListAvailableHoursService {
   public execute({ startDate, endDate }: IntervalDate) {
 
   }

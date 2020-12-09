@@ -10,7 +10,9 @@ interface CreateScheduleRuleDTO {
 }
 
 class CreateScheduleRuleService {
-  public execute({ type, parsedDate, weekDays, timeInterval }: CreateScheduleRuleDTO) {
+  public execute(
+    { type, parsedDate, weekDays, timeInterval }: CreateScheduleRuleDTO,
+  ): ScheduleRule {
     if (!type.includes('specific') && !type.includes('daily') && !type.includes('weekly')) {
       throw Error('type is not valid');
     }

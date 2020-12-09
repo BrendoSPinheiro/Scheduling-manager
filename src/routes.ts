@@ -6,7 +6,7 @@ const router = Router();
 
 router.get('/rules', ScheduleRuleController.index);
 
-router.get('/rules', ScheduleRuleController.show);
+router.get('/rules/availablehours', ScheduleRuleController.show);
 
 router.post('/rules', ScheduleRuleController.store);
 
