@@ -45,4 +45,4 @@ $ npm run dev
 Com o projeto em execução, utilize a Postman Collection (desafio-backend-cubos.postman_collection.json) para utilizar as funcionalidades da API.
 
 ou acesse:
-https://www.postman.com/collections/fb7648f30c9d5344218b
+https://www.getpostman.com/collections/fb7648f30c9d5344218b
