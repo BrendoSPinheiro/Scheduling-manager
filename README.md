@@ -14,6 +14,7 @@
 |route|HTTP Method|description
 |:---|:---:|:---:
 |`/rules`|GET|Lists schedule rules.
+|`/rules/availablehours`|GET|Lists available hours.
 |`/rules/:id`|DELETE|Delete one schedule rule.
 |`/rules`|POST|Create a new schedule rule.
 
