@@ -25,7 +25,12 @@ class ScheduleRuleController {
       const parsedEndDate = parseISO(stringifyEndDate);
 
       const listAvailableHours = new ListAvailableHoursService();
-      listAvailableHours.execute({ startDate: parsedStartDate, endDate: parsedEndDate });
+      const availableHours = listAvailableHours.execute({
+        startDate: parsedStartDate,
+        endDate: parsedEndDate,
+      });
+
+      response.status(200).json(availableHours);
     } catch (error) {
       response.status(400).json({ error: error.message });
     }

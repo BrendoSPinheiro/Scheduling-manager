@@ -28,6 +28,8 @@
         "import/extensions": "off",
         "import/no-unresolved": "off",
         "linebreak-style": "off",
-        "no-undef": "off"
+        "no-undef": "off",
+        "no-loop-func": "off",
+        "array-callback-return": "off"
     }
 }

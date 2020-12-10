@@ -1,4 +1,3 @@
-import { format, parseISO } from 'date-fns';
 import ScheduleRuleRepository from '../repositories/ScheduleRuleRepository';
 import Interval from '../models/Interval';
 import ScheduleRule from '../models/ScheduleRule';

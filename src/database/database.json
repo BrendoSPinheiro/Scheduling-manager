@@ -1,129 +1,36 @@
 [
   {
-    "id": "bd83857f-550c-45ab-97fc-86d2605cbb00",
-    "type": "specific",
-    "date": "2021-05-15T03:00:00.000Z",
+    "id": "91c56632-36a5-4845-b9f2-6e49a134432f",
+    "type": "weekly",
+    "weekDays": [
+      0,
+      4
+    ],
     "timeInterval": [
       {
-        "start": "14:20",
-        "end": "14:50"
+        "start": "12:40",
+        "end": "14:00"
+      },
+      {
+        "start": "15:00",
+        "end": "18:00"
       }
     ]
   },
   {
-    "id": "518b9511-635b-420c-90e4-7c3126690d5f",
-    "type": "specific",
-    "date": "2021-05-15T00:00:00.000Z",
+    "id": "f2ab78b1-0cfa-4a2f-91fb-378774019233",
+    "type": "daily",
     "timeInterval": [
       {
-        "start": "14:20",
-        "end": "14:50"
+        "start": "00:00",
+        "end": "14:00"
       }
     ]
   },
   {
-    "id": "1e85ae16-cf8a-4b43-9a8b-095f77d7ed3c",
+    "id": "88db752f-9e96-4c98-b958-10ab21c2061b",
     "type": "specific",
-    "date": "2021-05-15T00:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "51d06fbb-d011-4da5-847f-4fbc0402afa6",
-    "type": "specific",
-    "date": "2021-05-15T00:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "855674b3-c8ce-4ab1-8509-46a7259de079",
-    "type": "specific",
-    "date": "2021-05-15T00:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "d4a3a656-ee3d-440d-8981-7c51cdd1790a",
-    "type": "specific",
-    "date": "2021-05-15T00:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "45cee0b8-a9e9-4878-a523-b08f786c642f",
-    "type": "specific",
-    "date": "2021-05-30T00:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "3da81d66-02a4-438d-a923-300f48fb4ddc",
-    "type": "specific",
-    "date": null,
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "da92760d-2913-44e5-8df8-f608b8c7b9a0",
-    "type": "specific",
-    "date": "2021-05-31T00:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "9618b312-0974-47e4-af32-857fd57350f2",
-    "type": "specific",
-    "date": "2021-05-31T03:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "4f70159b-0024-4620-9c17-3081523671cb",
-    "type": "specific",
-    "date": "2021-05-31T03:00:00.000Z",
-    "timeInterval": [
-      {
-        "start": "14:20",
-        "end": "14:50"
-      }
-    ]
-  },
-  {
-    "id": "9e96f303-4d8a-4377-9ab0-fe396ec2fb41",
-    "type": "specific",
-    "date": "2021-05-31T03:00:00.000Z",
+    "date": "2020-12-13T03:00:00.000Z",
     "timeInterval": [
       {
         "start": "14:20",
