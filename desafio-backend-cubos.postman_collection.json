@@ -7,7 +7,7 @@
   "item": [
     {
       "name": "List schedule Rules",
-      "_postman_id": "6b833eb6-50aa-47fe-84bb-4ade605a2055",
+      "id": "6b833eb6-50aa-47fe-84bb-4ade605a2055",
       "request": {
         "method": "GET",
         "header": [
@@ -20,8 +20,43 @@
       ]
     },
     {
+      "name": "List Available Hours",
+      "id": "85791704-53c4-4273-9b9e-b62631e558c4",
+      "request": {
+        "method": "GET",
+        "header": [
+          
+        ],
+        "url": {
+          "raw": "http://localhost:3001/rules/availablehours?startDate=2020-12-13&endDate=2020-12-19",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "rules",
+            "availablehours"
+          ],
+          "query": [
+            {
+              "key": "startDate",
+              "value": "2020-12-13"
+            },
+            {
+              "key": "endDate",
+              "value": "2020-12-19"
+            }
+          ]
+        }
+      },
+      "response": [
+        
+      ]
+    },
+    {
       "name": "Create Daily Schedyle Rule",
-      "_postman_id": "b3526e26-5768-42ae-a0c6-31cf65a96212",
+      "id": "b3526e26-5768-42ae-a0c6-31cf65a96212",
       "request": {
         "method": "POST",
         "header": [
@@ -29,7 +64,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n\t\"type\": \"daily\",\n\t\"timeInterval\": [\n\t\t{\"start\": \"12:40\", \"end\": \"14:00\"},\n\t\t{\"start\": \"15:00\", \"end\": \"18:00\"}\n\t]\n}",
+          "raw": "{\n\t\"type\": \"daily\",\n\t\"timeInterval\": [\n\t\t{\"start\": \"00:00\", \"end\": \"14:00\"}\n\t]\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -44,7 +79,7 @@
     },
     {
       "name": "Create Specific Schedule Rule",
-      "_postman_id": "b68081f2-14f5-41b4-851e-3cd6c98ec6d9",
+      "id": "b68081f2-14f5-41b4-851e-3cd6c98ec6d9",
       "request": {
         "method": "POST",
         "header": [
@@ -52,7 +87,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n\t\"type\": \"specific\",\n\t\"date\": \"2021-05-15\",\n\t\"timeInterval\": [\n\t\t{\"start\": \"14:20\", \"end\": \"14:50\"}\n\t]\n}",
+          "raw": "{\n\t\"type\": \"specific\",\n\t\"date\": \"2020-12-13\",\n\t\"timeInterval\": [\n\t\t{\"start\": \"14:20\", \"end\": \"14:50\"}\n\t]\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -67,7 +102,7 @@
     },
     {
       "name": "Create Weekly Schedule Rule",
-      "_postman_id": "7d1b9c78-e7f0-4b12-b66b-8b6a4ad74aa1",
+      "id": "7d1b9c78-e7f0-4b12-b66b-8b6a4ad74aa1",
       "request": {
         "method": "POST",
         "header": [
@@ -90,7 +125,7 @@
     },
     {
       "name": "Delete Schedule Rule",
-      "_postman_id": "5e62c64c-9a8d-46ad-86f7-84399e80c8a7",
+      "id": "5e62c64c-9a8d-46ad-86f7-84399e80c8a7",
       "request": {
         "method": "DELETE",
         "header": [
@@ -110,7 +145,8 @@
           "variable": [
             {
               "key": "id",
-              "value": "48dcbcde-5007-43a4-ba62-f29c33d16ff4"
+              "value": "1aa4942e-b930-4153-b068-d13b1c65e9b5",
+              "type": "string"
             }
           ]
         }
@@ -119,8 +155,5 @@
         
       ]
     }
-  ],
-  "protocolProfileBehavior": {
-    
-  }
+  ]
 }
