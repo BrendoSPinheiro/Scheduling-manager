@@ -1,9 +1,9 @@
 # desafio-backend-cubos
 
-## Sobre
-API REST para facilitar o gerenciamento de horários de uma clínica!
+## About
+REST API to facilitate a clinic's schedule management!
 
-## Bibliotecas, linguagem e Frameworks utilizados
+## Libraries, language and Frameworks used
 
 - Node.js
 - Express
