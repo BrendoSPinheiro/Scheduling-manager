@@ -1,6 +1,9 @@
 # desafio-backend-cubos
 
-# Bibliotecas, linguagem e Frameworks utilizados
+## Sobre
+API REST para facilitar o gerenciamento de horários de uma clínica!
+
+## Bibliotecas, linguagem e Frameworks utilizados
 
 - Node.js
 - Express
@@ -9,7 +12,7 @@
 - eslint
 - Date-fns
 
-# <p>🛣 Routes</p>
+## <p>🛣 Routes</p>
 
 |route|HTTP Method|description
 |:---|:---:|:---:
@@ -18,7 +21,7 @@
 |`/rules/:id`|DELETE|Delete one schedule rule.
 |`/rules`|POST|Create a new schedule rule.
 
-# <p>🔥 Installing</p>
+## <p>🔥 Installing</p>
 
 ### <p>First Clone this repository</p>
 
