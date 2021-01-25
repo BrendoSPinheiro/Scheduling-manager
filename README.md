@@ -1,4 +1,4 @@
-# desafio-backend-cubos
+# Scheduling Manager
 
 ## About
 REST API to facilitate a clinic's schedule management!
