@@ -26,7 +26,7 @@ REST API to facilitate a clinic's schedule management!
 ### <p>First Clone this repository</p>
 
 ```shell
-$ git clone https://github.com/BrendoSPinheiro/desafio-backend-cubos.git
+$ git clone https://github.com/BrendoSPinheiro/Scheduling-manager
 ```
 ### <p>Install the dependencies</p>
 ```
